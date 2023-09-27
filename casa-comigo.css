@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgb(255, 254, 254), rgb(255, 168, 219));
+}
+
+.container {
+    text-align: center;
+}
+
+.moving-text {
+    font-size: 29px;
+    color: #4a4a4a; /* Cor das letras */
+    animation: moveLetters 2s infinite alternate; /* Animação CSS */
+}
+@keyframes moveLetters {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(10px); /* Mova as letras para a direita */
+    }
+}
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #ff9ae6;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: transform 0.3s; /* Add a transition for smooth animation */
+}
+
+.back-button:hover {
+    transform: scale(1.2); /* Increase the size of the button on hover */
+}

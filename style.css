@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgb(255, 254, 254), rgb(255, 168, 219));
+}
+
+.container {
+    text-align: center;
+}
+
+.frase {
+    font-size: 36px;
+    color: rgb(4, 2, 2);
+}
+
+#naoBotao, #simBotao {
+    font-size: 24px;
+    background-color: rgb(235, 101, 252); /* Fundo branco normal */
+    color: rgb(255, 255, 255); /* Texto preto normal */
+    padding: 10px 30px; /* Ajuste o tamanho dos botões aqui */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Efeito de transição suave */
+}
+ 
